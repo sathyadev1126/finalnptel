@@ -38,12 +38,12 @@ header p {
 .course {
   flex: 1;
   min-width: 300px;
-  background: white;
+  background: linear-gradient(135deg, #ffffff, #f3e5f5);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
+
 
 .course:hover {
   transform: scale(1.02);
@@ -53,7 +53,12 @@ header p {
   text-align: center;
   color: #4a148c;
   margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ab47bc;
+  padding-bottom: 10px;
 }
+
 
 /* Weeks Grid */
 .weeks {
@@ -67,43 +72,47 @@ header p {
   padding: 15px;
   border-radius: 10px;
   text-align: center;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
 
 .week-box:hover {
-  background: #c8e6c9;
-  transform: translateY(-5px);
+  background: #81c784;
+  transform: translateY(-8px) scale(1.05);
 }
+
 
 .week-box h3 {
   margin: 0;
   font-size: 1rem;
-  color: #2e7d32;
+  color: #080808;
 }
 
 .week-box a {
   display: inline-block;
   margin-top: 8px;
-  padding: 6px 10px;
-  background: #4a148c;
+  padding: 8px 12px;
+  background: #6a1b9a;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 0.9rem;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .week-box a:hover {
-  background: #6a1b9a;
+  background: #ff0303;
+  transform: scale(1.05);
 }
+
 
 /* Footer */
 footer {
   text-align: center;
   padding: 15px;
   background: #4a148c;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-top: 30px;
 }
 .author {
@@ -112,4 +121,5 @@ footer {
   color: red;          /* red color */
   letter-spacing: 2px; /* spacing between letters (optional) */
 }
+
 
