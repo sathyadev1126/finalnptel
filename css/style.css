@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #4a148c;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+/* Container with Two Sides */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Course Sections */
+.course {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.course:hover {
+  transform: scale(1.02);
+}
+
+.course h2 {
+  text-align: center;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+/* Weeks Grid */
+.weeks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.week-box {
+  background: #f1f8e9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.week-box:hover {
+  background: #c8e6c9;
+  transform: translateY(-5px);
+}
+
+.week-box h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #2e7d32;
+}
+
+.week-box a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #4a148c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.week-box a:hover {
+  background: #6a1b9a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4a148c;
+  color: white;
+  margin-top: 30px;
+}
+.author {
+  font-size: 1.5rem;   /* bigger text */
+  font-weight: bold;   /* bold */
+  color: red;          /* red color */
+  letter-spacing: 2px; /* spacing between letters (optional) */
+}
+
